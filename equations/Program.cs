@@ -60,15 +60,20 @@ class Program
             break;
 
           case 3:
-            System.Console.WriteLine("Rownanie 5 stopnia / metoda polowienia przedzialow");
-            break;
-
-          case 4:
-            System.Console.WriteLine("Algorytm genetyczny");
-            break;
-
-          case 5:
-            System.Console.WriteLine("????");
+            System.Console.Write("Podaj a: ");
+            a = Double.Parse(Console.ReadLine());
+            System.Console.Write("Podaj b: ");
+            b = Double.Parse(Console.ReadLine());
+            System.Console.Write("Podaj c: ");
+            c = Double.Parse(Console.ReadLine());
+            System.Console.Write("Podaj d: ");
+            d = Double.Parse(Console.ReadLine());
+            System.Console.Write("Podaj e: ");
+            e = Double.Parse(Console.ReadLine());
+            System.Console.Write("Podaj f: ");
+            f = Double.Parse(Console.ReadLine());
+            BisectionMethod bisectionMethod = new BisectionMethod(a, b, c, d, e, f);
+            System.Console.WriteLine(bisectionMethod.ToString() + "\n"); break;
             break;
 
           default:
